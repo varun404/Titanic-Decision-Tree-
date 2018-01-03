@@ -11,7 +11,7 @@ dataset = pd.read_csv('titanic.csv')
 dataset.drop(dataset.columns[[3,8,10]],axis = 1,inplace = True)
 
 
-#Make sure there are no Nan in dataset
+#Calculate the Nan values  in dataset. This will show you total Nan values of each category if you're using Spyder IDE
 print (dataset.isnull().sum())
 
 
